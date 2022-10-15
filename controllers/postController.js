@@ -67,7 +67,7 @@ const changePost = async (req, res, next) => {
       { where: { id: foundPost.id } }
     );
 
-    res.status(200).json({ message: "Car updated" });
+    res.status(200).json({ message: "Post updated" });
   } catch (error) {
     next(error);
   }
